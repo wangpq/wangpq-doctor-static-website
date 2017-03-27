@@ -1,0 +1,99 @@
+﻿/* 公共按钮CSS */
+@charset \"utf-8\";
+
+.ys-btn-lg {
+    font-size: 0.4rem;
+    height: 1.186667rem;
+    line-height: 1.186667rem;
+    display: block;
+    width: 100%;
+    border-radius: 4px
+}
+.ys-btn-wrap {
+    padding: 0.2rem 0.4rem;
+}
+
+
+.ys-btn,.ys-btn-lg,.ys-btn-s {
+    height: 1.186667rem;
+    line-height: 1.186667rem;
+    padding: 0 11px;
+    min-width: 55px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: #fdfdfd;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.5,#fff),to(#fafafa));
+    vertical-align: top;
+    color: #00a5e0;
+    -webkit-box-sizing: border-box;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #cacccd;
+    border-radius: 0.1rem;
+}
+
+
+.ys-btn:not(.disabled):not(:disabled):active,.ys-btn-lg:not(.disabled):not(:disabled):active,.ys-btn-s:not(.disabled):not(:disabled):active,.ys-btn.active,.active.ys-btn-lg,.active.ys-btn-s {
+    background: #f2f2f2;
+    color: rgba(0,165,224,.5);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.ys-btn:after,.ys-btn-lg:after,.ys-btn-s:after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    bottom: -7px;
+    left: 0;
+    right: 0
+}
+
+.ys-btn-primary {
+    background-color: #18b4ed;
+    border-color: #0baae4;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.5,#1fbaf3),to(#18b4ed));
+    color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.ys-btn-primary:not(.disabled):not(:disabled):active,.ys-btn-primary.active {
+    background: #1ca7da;
+    border-color: #1ca7da;
+    color: rgba(255,255,255,.9);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.ys-btn-danger {
+    background: #f08c34;
+    color: #fff;
+    border-color: #f43d30;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.ys-btn-danger:not(.disabled):not(:disabled):active,
+.ys-btn-danger.active {
+    background: #f07f1b;
+    border-color: #ff6b3d;
+    color: rgba(255,255,255,.9);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.ys-btn.disabled,
+.disabled.ys-btn-lg,
+.disabled.ys-btn-s,
+.ys-btn:disabled,
+.ys-btn-lg:disabled,
+.ys-btn-s:disabled {
+    border: 0;
+    color: #ccc;
+    background: #e9ebec;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+

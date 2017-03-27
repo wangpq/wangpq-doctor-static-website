@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta name="flexible" content="initial-dpr=2,maximum-dpr=3" />
+    <meta content="modeName=750-12" name="grid" />
+	<!-- 启用360浏览器的极速模式(webkit) – -->
+	<meta name="renderer" content="webkit">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!--这meta的作用就是删除默认的苹果工具栏和菜单栏-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--网站开启对web app程序的支持-->
+	<meta name="apple-touch-fullscreen" content="yes">
+	<!--手机号码不被显示为拨号链接-->
+	<meta name="format-detection" content="telephone=no">
+
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content=""/>
+	<link rel="stylesheet" href="assets/css/ys_common_ui.css" />
+	<link rel="stylesheet" href="assets/css/ys_yptj.css" />
+    <script src="assets/js/flexible.js"></script>
+    <script src="assets/js/zepto.js"></script>
+</head>
+<body>
+
+<div class="ys-m-list ys-m-list-yd">
+	<div class="w">
+    <h4 class="hd">
+		<span class="cell">云南白药 创可贴 轻巧透气型</span>
+		<span class="cell"><i>50</i>盒</span>
+	</h4>
+	<div class="bd">
+		<p>
+			<span class="cell">
+				<img src="assets/dbImages/ys-ys.jpg" alt="王晓丽">
+				<span>王晓丽</span>
+			</span>
+			<span class="cell">
+				<span>10盒</span>
+			</span>
+		</p>
+		<p>
+			<span class="cell">
+				<img src="assets/dbImages/ys-ys.jpg" alt="王晓丽">
+				<span>王晓丽</span>
+			</span>
+			<span class="cell"><span>20盒</span></span>
+		</p>
+	</div>
+	</div>
+	<div class="w">
+     <h4 class="hd">
+		<span class="cell">云南白药 创可贴 轻巧透气型</span>
+		<span class="cell"><i>50</i>盒</span>
+	</h4>
+	<div class="bd">
+		<p>
+			<span class="cell">
+				<img src="" alt="">
+				<span>王晓丽</span>
+			</span>
+			<span class="cell"><span>10盒</span></span>
+		</p>
+		<p>
+			<span class="cell">
+				<img src="" alt="">
+				<span>王晓丽</span>
+			</span>
+			<span class="cell"><span>50盒</span></span>
+		</p>
+	</div>
+	</div>
+	<div class="w">
+    <h4 class="hd">
+		<span class="cell">云南白药 创可贴 轻巧透气型</span>
+		<span class="cell"><i>50</i>盒</span>
+	</h4>
+	<div class="bd">
+		<p>
+			<span class="cell">
+				<img src="assets/dbImages/ys-ys.jpg" alt="王晓丽">
+				<span>王晓丽</span>
+			</span>
+			<span class="cell">
+				<span>10盒</span>
+			</span>
+		</p>
+		<p>
+			<span class="cell">
+				<img src="assets/dbImages/ys-ys.jpg" alt="王晓丽">
+				<span>王晓丽</span>
+			</span>
+			<span class="cell"><span>20盒</span></span>
+		</p>
+	</div>
+    </div>
+</div>
+
+<script>
+$(function(){
+    $(".ys-m-list .w .hd").bind("click",function(){
+        var self=$(this).parent();
+        if(self.hasClass("opened")){
+            self.removeClass("opened");
+        }else{
+            self.siblings().removeClass("opened");
+            self.addClass("opened");
+        }
+    })
+})
+</script>
+
+</body>
+</html>
+

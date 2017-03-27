@@ -1,0 +1,92 @@
+﻿/* 我的预约CSS */
+@charset \"utf-8\";
+
+.ys-yy{
+    background-color: #fff;
+    margin-top: 0.24rem;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    padding-left: 0.4rem;
+    border-top: 1px solid #e5e5e5;
+}
+.ys-yy .w{
+	position:relative;
+}
+.ys-yy .w:after{
+	content: '';
+	position: absolute;
+	right: 0.4rem;
+	top: 50%;
+	height: 1.466667rem;
+	width:  1.466667rem;
+	margin-top:-0.7333335rem;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	display: block;
+}
+.ys-yy .w.ok:after{
+	background-image: url(../images/ys-tongguo.png);
+}
+.ys-yy .w.no:after{
+    background-image: url(../images/ys-reject.png);
+}
+.ys-yy .ys-yy-hd{
+	padding:0.18rem 0;
+    font-size: 0.373333rem;
+    color: #333;
+	display:block;
+}
+.ys-yy .ys-yy-hd .ys-i-clock{
+    display:inline-block;
+	vertical-align:middle;
+	width:0.34rem;
+	height:0.34rem;
+    background: url(../images/ys-icon-clock.png) center center no-repeat;
+    background-size: 100% 100%;
+	vertical-align:middle;
+}
+.ys-yy .ys-yy-hd .text{
+    color:#999999;
+	font-size:0.346667rem;
+	font-family:Microsoft YaHei;
+	vertical-align:middle;
+}
+.ys-yy .ys-yy-bd{
+    border-top: 1px solid #e5e5e5;
+	padding:0.24rem 0;
+}
+.ys-yy .ys-yy-bd .ys-i-doctor{
+    display:inline-block;
+	vertical-align:middle;
+	width:1.12rem;
+	height:1.12rem;
+	border-radius:0.56rem;
+    background: #8fcff3 url(../images/ys-doctor.png) center center no-repeat;
+    background-size: 50% 60%;
+	vertical-align:middle;
+    margin-right:0.8em;
+}
+.ys-yy .ys-yy-bd p>span{
+    margin-right:0.8em;
+}
+.ys-yy .ys-yy-bd p>span.doctor{
+    font-size:0.4rem;
+	vertical-align:middle;
+}
+.ys-yy .ys-yy-bd p>span.doctor>span{
+    font-size:0.32rem;
+}
+.ys-yy .ys-yy-bd p>span.place{
+    color:#626368;
+    font-size:0.32rem;
+	vertical-align:middle;
+}
+.ys-yy .ys-yy-bd p>span.depart{
+    color:#ff4c4c;
+    font-size:0.32rem;
+	vertical-align:middle;
+}
+
+
+

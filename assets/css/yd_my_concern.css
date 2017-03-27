@@ -1,0 +1,50 @@
+﻿@charset \"utf-8\";
+html,body{
+   background-color:#f5f4f9;
+}
+.ys-v-list{
+  margin-top:0.4rem;
+}
+.ys-v-list .w{
+  border-top:1px solid #d4dadc;
+  border-bottom:1px solid #d4dadc;
+  display:table;
+  width:100%;
+  padding:0.28rem 0.283333rem 0.28rem;
+  margin-bottom:0.23rem;
+  background-color: #fff;
+}
+.ys-v-list .w:active{
+    background-color:#f5f4f9!important;
+}
+.ys-v-list .w .cell{
+  display:table-cell;
+  vertical-align:middle;
+}
+.ys-v-list .w .cell:first-of-type{
+    padding-right:0.32rem;
+    width: 2.453332rem;
+}
+.ys-v-list .w .cell img{
+    width: 2.453332rem;
+    height: 1.84rem;
+    display:block;
+}
+.ys-v-list .cell h4{
+  font-size:0.4rem;
+  color:#333;
+  text-align: left;
+  word-wrap:normal;
+  white-space:nowrap;
+}
+.ys-v-list .cell p{
+  font-size:0.342105rem;
+  color:#626368;
+  text-align: left;
+  line-height:1.8em;
+}
+.ys-v-list .cell p .time{
+  color:#8c8c8c;
+  font-size:0.32rem;
+  float: right;
+}

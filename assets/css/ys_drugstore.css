@@ -1,0 +1,64 @@
+﻿/* 查看药店CSS */
+@charset \"utf-8\";
+
+.ys-lk-box{
+    margin-top:0.42rem;
+    margin-bottom:0.42rem;
+	background-color:#FFF;
+}
+.ys-lk-box .ys-lk-hd{
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0.38rem 0.4rem;
+    font-size: 0.426666rem;
+    color: #333;
+}
+.ys-lk-box .ys-lk-bd{
+    border-bottom: 1px solid #e5e5e5;
+	padding:0.1rem 0;
+}
+.ys-lk-box .ys-lk-bd p{
+    margin: 0;
+    font-size: 0.346666rem;
+    color: #333;
+    line-height: 2em;
+    padding:0 0.4rem;
+}
+.ys-lk-box .ys-lk-bd p.np{
+    padding:0.2rem 0;
+}
+.ys-lk-box #baiduMap{
+    display: block;
+    width:100%;
+    height:5.066665rem;
+}
+.ys-lk-box .ys-lk-bd p.np img{
+    display:block;
+	width:100%;
+}
+.ys-lk-box .ys-lk-foot{
+    overflow:hidden;
+    border-bottom: 1px solid #e5e5e5;
+}
+.ys-lk-box .ys-lk-foot a,
+.ys-lk-box .ys-lk-foot a:visited{
+    display:block;
+    padding: 0.24rem 0.24rem;
+    vertical-align: middle;
+	text-decoration:none;
+}
+.ys-lk-box .ys-lk-foot a:active{
+    background-color:#f0f0f0;
+}
+.ys-lk-box .ys-lk-foot img{
+    vertical-align: middle;
+    width: 0.826666rem;
+    height: 0.826666rem;
+    margin-right: 0.133333rem;
+}
+.ys-lk-box .ys-lk-foot span{
+    font-size: 0.4rem;
+    vertical-align: middle;
+    color: #333;
+}
+

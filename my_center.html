@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta name="flexible" content="initial-dpr=2,maximum-dpr=3" />
+    <meta content="modeName=750-12" name="grid" />
+	<!-- 启用360浏览器的极速模式(webkit) – -->
+	<meta name="renderer" content="webkit">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!--这meta的作用就是删除默认的苹果工具栏和菜单栏-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--网站开启对web app程序的支持-->
+	<meta name="apple-touch-fullscreen" content="yes">
+	<!--手机号码不被显示为拨号链接-->
+	<meta name="format-detection" content="telephone=no">
+
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="assets/css/ys_common_ui.css" />
+    <link rel="stylesheet" href="assets/css/ys_grzx.css" />
+    <script src="assets/js/flexible.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.qrcode.js"></script>
+    <script src="assets/js/touch_0.2.14.js"></script>
+    <script src="assets/js/ys_grzx.js"></script>
+
+</head>
+<body>
+<!--
+<header class="bar bar-nav">
+  <a class="icon icon-left pull-left"></a>
+  <a class="icon icon-refresh pull-right"></a>
+  <h1 class="title">标题</h1>
+</header>
+-->
+
+<section class="ys-hd-info">
+	<div class="c">
+		<span class="img" style="background-image:url(./assets/images/ys-men-icon.png)"></span>
+	</div>
+	<div class="c">
+		<h4>
+			<span>18701343447</span>
+			<i class="ys-i-location"></i>
+		</h4>
+        <!--
+        <p>三合药业</p>
+        -->
+	</div>
+	<div class="c">
+	    <img class="ym-weixin" id="ym-weixin" src="./assets/images/ys-shaoma.png" alt="个人微信" title="个人微信"/>
+	</div>
+</section>
+
+
+
+<ul class="ys-i-list">
+    <li onclick="javascript:window.location.href='#'">
+	    <div class="w">
+			<span class="icon" style="background-image:url(./assets/images/ys-grxx.png)"></span>
+			<span class="text">个人信息</span>
+		</div>
+    </li>
+    <li onclick="javascript:window.location.href='#'">
+	    <div class="w">
+			<span class="icon" style="background-image:url(./assets/images/ys-zhekou.png)"></span>
+			<span class="text">我的折扣</span>
+		</div>
+    </li>
+    <li onclick="javascript:window.location.href='#'">
+	    <div class="w">
+			<span class="icon" style="background-image:url(./assets/images/ys-guanzhu.png)"></span>
+			<span class="text">我的关注</span>
+		</div>
+    </li>
+</ul>
+
+<ul class="ys-i-list">
+    <li onclick="javascript:window.location.href='#'">
+	    <div class="w">
+			<span class="icon" style="background-image:url(./assets/images/ys-yuyue.png)"></span>
+			<span class="text">我的预约</span>
+		</div>
+    </li>
+    <li onclick="javascript:window.location.href='#'">
+	    <div class="w">
+			<span class="icon" style="background-image:url(./assets/images/ys-shezhi.png)"></span>
+			<span class="text">设置</span>
+		</div>
+    </li>
+</ul>
+
+
+<!--弹出层代码  start-->
+<div class="dialog-mask" center='true'>
+    <div class="w">
+        <div class="dialog-wrap">
+            <div class="head">
+                 <div class="hd">
+                     <div class="cell">
+                        <img src="./assets/dbImages/ys-ys.jpg" alt="">
+                     </div>
+                     <div class="cell">
+                         <p>
+                            <span>爱跳舞的MM</span>
+                            <i class="ys-i-location"></i>
+                        </p>
+                        <p>18702157348</p>
+                     </div>
+                 </div>
+            </div>
+            <div class="body">
+                <div id="wxErWeiMa"></div>
+            </div>
+            <div class="foot">
+                <p>扫一扫上面的二维码团，加我微信</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+$(function(){
+    touch.on('#ym-weixin', 'hold tap doubletap', function(){
+        new Dialog( ".dialog-mask",{
+            onAfterDialogInit : function(){
+                QRCode("http://www.ishuxin.cn/details.html",{
+                    phone : "18701373448"
+                });
+            }
+        });
+    });
+})
+</script>
+
+
+
+</body>
+</html>
+

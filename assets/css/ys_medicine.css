@@ -1,0 +1,180 @@
+﻿/* 查看药品CSS */
+@charset \"utf-8\";
+
+html,body{
+   max-width:auto;
+}
+.swiper-container {
+	width: 100%;
+	max-width:750px;
+	margin: 0 auto;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+span.swiper-pagination-bullet{
+	width: 0.16rem;
+	height: 0.16rem;
+	margin:0 0.1rem;
+	opacity:1;
+	display: inline-block;
+	border:1px solid #2ca7d8;
+	background:#fff;
+	line-height: 0;
+	font-size: 0;
+	cursor: pointer;
+	text-indent: -9999px;
+	border-radius: 0.08rem;
+	-webkit-border-radius: 0.08rem;
+	transition:width ease-in .4s;
+	-webkit-transition:width ease-in .4s;
+	-moz-transition:width ease-in .4s;
+	-o-transition:width ease-in .4s;
+	-ms-transition:width ease-in .4s;
+}
+.swiper-pagination-bullet-active{
+	background:#2ca7d8!important;
+	border-color:#2ca7d8!important;
+	width:0.40rem!important;
+	opacity:1;
+}
+.swiper-container .swiper-slide img{
+	display:block;
+	margin:0 auto;
+	max-width:100%;
+}
+
+.ys-s-box{
+    background-color: #fff;
+    margin-top: 0.26rem;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    border-top: 1px solid #e5e5e5;
+	display:table;
+	width:100%;
+}
+.ys-s-box .ys-s-cell{
+	padding:0.24rem 0;
+    font-size: 0.426667rem;
+    color: #333;
+	display:table-cell;
+}
+.ys-s-box .ys-s-cell.ys-r{
+    text-align:right;
+	font-family:Microsoft YaHei;
+}
+.ys-s-box .ys-s-cell.ys-r span:first-of-type{
+    color:#c1c1c1;
+    font-size: 0.4rem;
+	text-decoration:line-through;
+}
+.ys-s-box .ys-s-cell.ys-r span:last-of-type{
+    color:#f08c34;
+    font-size: 0.506667rem;
+}
+.ys-s-box .ys-s-cell.ys-r span i{
+	font-style:normal;
+}
+
+
+
+.ys-desc{
+    background-color: #fff;
+    margin-top: 0.24rem;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    border-top: 1px solid #e5e5e5;
+}
+.ys-desc .ys-desc-hd{
+	padding:0.3rem 0;
+    font-size: 0.373333rem;
+    color: #333;
+	display:block;
+}
+.ys-desc .ys-desc-bd{
+    border-top: 1px solid #e5e5e5;
+	padding:0.24rem 0;
+}
+.ys-desc .ys-desc-bd p{
+	margin:0;
+    font-size: 0.37rem;
+    color: #333;
+	line-height:2em;
+}
+.ys-desc .ys-desc-bd p span{
+    color: #626368;
+}
+
+
+
+
+
+
+.ys-d-list{
+    background-color: #fff;
+    margin-top: 0.26rem;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    border-top: 1px solid #e5e5e5;
+	width:100%;
+	list-style:none;
+	margin-bottom:0.26rem;
+}
+.ys-d-list .w:last-of-type{
+	border-bottom:none;
+}
+.ys-d-list .a{
+	padding:0.24rem 0.24rem;
+	vertical-align:middle;
+	border-bottom:1px solid #e5e5e5;
+}
+.ys-d-list .a:last-of-type{
+	border-bottom:none;
+}
+.ys-d-list .a:active{
+    background-color:#e5e6e7;
+}
+.ys-d-list .a  img{
+	vertical-align:middle;
+	width:0.826666rem;
+	height:0.826666rem;
+	margin-right:0.133333rem;
+}
+.ys-d-list .a  .text{
+	font-size:0.4rem;
+	vertical-align:middle;
+	color:#333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

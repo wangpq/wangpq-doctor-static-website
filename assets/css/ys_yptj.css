@@ -1,0 +1,106 @@
+﻿@charset \"utf-8\";
+html,body{
+	background-color: #f5f4f9;
+}
+.ys-m-list{
+    text-align:left;
+	overflow-x:hidden;
+	oveflow-y:auto;
+	height:100%;
+	background-color: #fff;
+	margin-top:0.42rem;
+}
+
+.ys-m-list .hd{
+    display: table;
+    color:#626368;
+	font-size:0.346666rem;
+    border-top:1px solid #e1e1e1;
+	padding: 0.32rem 0.4rem;
+    width: 100%;
+	white-space:nowrap;
+	overflow:hidden;
+	position:relative;
+}
+.ys-m-list .w:last-of-type .hd{
+    border-bottom:1px solid #e1e1e1;
+}
+.ys-m-list .opened .hd{
+    border-bottom:1px solid #e1e1e1;
+}
+.ys-m-list .hd:active{
+    background-color: #f5f4f9;
+}
+.ys-m-list .hd:after{
+	position: absolute;
+	right: 0.4rem;
+	top: 50%;
+	width: 0.44rem;
+	height: 0.24rem;
+	margin-top: -0.1rem;
+	content: "";
+	background-size: 100% 100%;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../images/ys-i-arrow-bot.png);
+}
+.ys-m-list .opened .hd:after{
+	background-image: url(../images/ys-i-arrow-top.png);
+}
+.ys-m-list .bd {
+	display: none;
+    margin:0 0.4rem;
+	-webkit-transition : all 0.8s ease-in-out 0s;
+	-moz-transition : all 0.8s ease-in-out 0s;
+	-o-transition : all 0.8s ease-in-out 0s;
+	-ms-transition : all 0.8s ease-in-out 0s;
+	transition : all 0.8s ease-in-out 0s;
+}
+.ys-m-list .opened .bd{
+	display: block;
+}
+.ys-m-list .bd p{
+    display: table;
+    width: 100%;
+    border-bottom:1px solid #e1e1e1;
+    padding:0.18rem 0;
+}
+.ys-m-list .bd p:last-of-type{
+    border-bottom:none;
+}
+.ys-m-list .hd .cell i{
+    color:#f08c34;
+    font-style: normal;
+}
+.ys-m-list .hd .cell,
+.ys-m-list p .cell{
+    display: table-cell;
+}
+.ys-m-list .hd .cell:first-of-type,
+.ys-m-list p .cell:first-of-type{
+   text-align: left;
+}
+.ys-m-list .hd .cell:last-of-type{
+    text-align: right;
+    padding-right:1.5em;
+}
+.ys-m-list p .cell:first-of-type img{
+    width: 0.746665rem ;
+    height: 0.746665rem;
+    display: inline-block;
+    vertical-align:middle;
+    border-radius:0.1rem;
+}
+.ys-m-list p .cell span{
+    color:#333;
+    font-size:0.346666rem;
+    vertical-align:middle;
+}
+.ys-m-list p .cell:last-of-type{
+    text-align: right;
+}
+.ys-m-list p .cell:last-of-type span{
+    text-align: right;
+    padding-right:1.5em;
+}

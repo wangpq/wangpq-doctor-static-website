@@ -1,0 +1,126 @@
+﻿/* 发现CSS */
+@charset \"utf-8\";
+html,body{
+   max-width:auto;
+}
+.swiper-container {
+	width: 100%;
+	max-width:750px;
+	margin: 0 auto;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+span.swiper-pagination-bullet{
+	width: 0.16rem;
+	height: 0.16rem;
+	margin:0 0.1rem;
+	opacity:1;
+	display: inline-block;
+	border:1px solid #cedbdb;
+	background:#cedbdb;
+	line-height: 0;
+	font-size: 0;
+	cursor: pointer;
+	text-indent: -9999px;
+	border-radius: 0.08rem;
+	-webkit-border-radius: 0.08rem;
+	transition:width ease-in .4s;
+	-webkit-transition:width ease-in .4s;
+	-moz-transition:width ease-in .4s;
+	-o-transition:width ease-in .4s;
+	-ms-transition:width ease-in .4s;
+}
+.swiper-pagination-bullet-active{
+	background:#fff!important;
+	border-color:#fff!important;
+	width:0.40rem!important;
+	opacity:1;
+}
+.swiper-container .swiper-slide img{
+	display:block;
+	margin:0 auto;
+	width: 100%;
+}
+
+
+
+
+
+.ys-menu{
+	width:100%;
+	display:table;
+}
+.ys-menu .cell{
+	text-align:center;
+	width:33.333333%;
+	display:table-cell;
+	padding:0.4rem 0;
+}
+.ys-menu .cell:active{
+	background-color:#fff;
+}
+.ys-menu .cell .icon{
+    display:block;
+	width: 1.866666rem;
+	height:1.866666rem;
+	line-height: 1.866666rem;
+	background-color:#ccc;
+	margin:0 auto;
+	border-radius: 0.933333rem;
+}
+.ys-menu .cell .text{
+    display:block;
+    color:#666;
+	font-size:0.346778rem;
+	padding:0.2rem 0.1rem;
+}
+.ys-menu .cell:first-of-type .icon{
+   background-color:#ff9c00;
+}
+.ys-menu .cell:nth-of-type(2) .icon{
+   background-color:#ff6565;
+}
+.ys-menu .cell:nth-of-type(3) .icon{
+   background-color:#a785ff;
+}
+
+
+.ys-i-zx,
+.ys-i-gh,
+.ys-i-qd{
+	display:inline-block;
+	vertical-align:middle;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 100%;
+	   -moz-background-size: 100% 100%;
+	        background-size: 100% 100%;
+	background-position:center center;
+	width: 0.8rem;
+	height:0.8rem;
+}
+.ys-i-zx{
+	background-image: url(../images/ys-consult.png);
+}
+.ys-i-gh{
+	background-image: url(../images/ys-guahao.png);
+}
+.ys-i-qd{
+	background-image: url(../images/ys-qidai.png);
+}

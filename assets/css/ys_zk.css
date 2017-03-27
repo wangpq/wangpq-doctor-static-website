@@ -1,0 +1,112 @@
+﻿/* 我的折扣CSS */
+@charset \"utf-8\";
+.ys-zk{
+    background-color: #fff;
+    margin-top: 0.36rem;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    border-top: 1px solid #e5e5e5;
+}
+.ys-zk .w{
+	padding:0.24rem 0;
+    font-size: 0.373333rem;
+    color: #333;
+	display:table;
+	width:100%;
+	padding-left: 0.4rem;
+	border-bottom:1px solid #e5e5e5;
+}
+.ys-zk .w:last-of-type{
+	border-bottom:none;
+}
+.ys-zk .w:active{
+    background-color:#e5e6e7;
+}
+.ys-zk .w .cell{
+    display:table-cell;
+	vertical-align:middle;
+}
+.ys-zk .w .cell:nth-of-type(2){
+	padding-left:0.2rem;
+	padding-right:0.2rem;
+}
+.ys-zk .w  .cell:first-of-type img{
+	vertical-align:middle;
+	width:0.826666rem;
+	height:0.826666rem;
+}
+.ys-zk .w  .cell:nth-of-type(2) .title{
+	font-size:0.4rem;
+}
+.ys-zk .w  .cell:nth-of-type(2) .curPrice{
+    color:#f08c34;
+	font-size:0.4rem;
+}
+.ys-zk .w  .cell:nth-of-type(2) .oldPrice{
+    text-decoration:line-through;
+	color:#c1c1c1;
+	font-size:0.32rem;
+}
+.ys-zk .w .cell:last-of-type{
+    border-left: 1px solid #e5e5e5;
+	padding-left:0.266667rem;
+	padding-right:0.266667rem;
+	width:1.32rem;
+}
+.ys-zk .w .cell:last-of-type img{
+	vertical-align:middle;
+	width:1.066667rem;
+	height:1.066667rem;
+}
+
+
+
+.dialog-mask .hd{
+   display: table;
+   width:100%;
+}
+.dialog-mask .hd .cell{
+   display: table-cell;
+   vertical-align: middle;
+}
+.dialog-mask .hd .cell:first-of-type{
+   width: 1.6rem;
+   height: 1.6rem;
+}
+.dialog-mask .hd .cell img{
+   width: 1.6rem;
+   height: 1.6rem;
+   border-radius: 0.8rem;
+}
+.dialog-mask .hd .cell p{
+   color:#333;
+   padding:0.04rem 0.2rem ;
+   font-size:0.36rem;
+}
+.dialog-mask .hd .cell p:last-of-type{
+   color:#666;
+   font-size:0.28rem;
+}
+.dialog-mask .hd .cell p .ys-i-location{
+   max-width:16px;
+   max-height:16px;
+}
+.dialog-mask .hd .cell p:last-of-type span,
+.dialog-mask .hd .cell p:last-of-type i{
+   vertical-align:middle;
+}
+.dialog-mask .body{
+   padding:0.4rem 0;
+   text-align: center;
+}
+.dialog-mask .body #wxErWeiMa{
+   height: 120px;
+   width: 120px;
+   margin:0 auto;
+}
+.dialog-mask .foot{
+   color:#666;
+}
+.dialog-mask .foot p{
+   font-size:0.28rem;
+}

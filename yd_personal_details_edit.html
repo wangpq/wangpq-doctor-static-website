@@ -1,0 +1,316 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta name="flexible" content="initial-dpr=2,maximum-dpr=3" />
+    <meta content="modeName=750-12" name="grid" />
+	<!-- 启用360浏览器的极速模式(webkit) – -->
+	<meta name="renderer" content="webkit">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!--这meta的作用就是删除默认的苹果工具栏和菜单栏-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--网站开启对web app程序的支持-->
+	<meta name="apple-touch-fullscreen" content="yes">
+	<!--手机号码不被显示为拨号链接-->
+	<meta name="format-detection" content="telephone=no">
+
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content=""/>
+	<link rel="stylesheet" href="assets/css/ys.mui.css" />
+	<link rel="stylesheet" href="assets/css/ys.mui.picker.css" />
+	<link rel="stylesheet" href="assets/css/ys_common_ui.css" />
+	<link rel="stylesheet" href="assets/css/ys_btn.css" />
+	<link rel="stylesheet" href="assets/css/ys_grxx.css" />
+	<link rel="stylesheet" href="assets/css/ys_autotext.css" />
+    <script src="assets/js/flexible.js"></script>
+    <script src='assets/js/zepto.js'></script>
+    <script src='assets/js/ysUpLoad.js'></script>
+    <script src='assets/js/ys.mui.js'></script>
+    <script src='assets/js/ys.mui.picker.js'></script>
+    <script src='assets/js/ysAutoText.js'></script>
+</head>
+<body>
+
+<ul class="ys-zl-list yd-zl-list">
+    <li class="tx">
+    	<a href="#" target="_parent">
+		    <span class="key">头像</span>
+			<span class="head">
+				<img src="assets/images/ys-men-icon.png" alt="头像" />
+			</span>
+		</a>
+	</li>
+    <li data-autotext='{"type":"text","key":"姓名","result":"张小松"}'>
+    	<a href="#" target="_parent">
+		    <span class="key">姓名</span>
+			<span class="value">
+				<input class="target" readonly type="text" name="name" id="name" value="张小松" />
+			</span>
+		</a>
+	</li>
+    <li data-autotext='{"type":"text","key":"昵称","result":"静雅居士"}'>
+    	<a href="javascript:void(0)" target="_parent">
+		    <span class="key">昵称</span>
+			<span class="value">
+				<input class="target" readonly type="text" name="nickname" id="nickname" value="静雅居士" />
+			</span>
+		</a>
+	</li>
+</ul>
+
+<ul class="ys-zl-list yd-zl-list">
+    <li data-autotext='{"type":"radio","key":"性别","result":[{"text":"男","checked":true},{"text":"女"}]}'>
+	    <a href="javascript:void(0)" target="_parent">
+		    <span class="key">性别</span>
+		    <!--
+			<span class="value">
+				<select class="target" name="sex" id="sex">
+					<option value="男" selected>男</option>
+					<option value="女">女</option>
+				</select>
+			</span>
+		    -->
+			<span class="value">
+                <input class="target" readonly type="text" name="sex" id="sex" value="男" />
+			</span>
+		</a>
+	</li>
+    <li>
+	    <a href="javascript:volid(0);" target="_parent">
+		    <span class="key">出生年月</span>
+			<span class="value birthday-date" data-options='{"type":"date","beginYear":1900,"endYear":2016}' >
+				<input type="text" name="birthday" id="birthday" value="2016-12-12" />
+			</span>
+
+		</a>
+	</li>
+</ul>
+
+
+<div class="ys-btn-wrap">
+	<button class="ys-btn-lg ys-btn-danger">保存</button>
+</div>
+
+
+<!--弹出层代码  start-->
+<div class="dialog-mask upload-img" center='true'>
+    <div class="w">
+        <div class="dialog-wrap">
+            <div class="head">
+			    <h2>上传头像</h2>
+            </div>
+            <div class="body">
+                <form id="uploadForm" action="upload.php" method="post" enctype="multipart/form-data">
+                    <div class="upload_box">
+                        <div class="upload_main">
+                            <div class="upload_choose">
+                            	<label for="fileImage">请选择要上传的图片：
+                                	<input id="fileImage" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" size="30" />
+                                </label>
+                            </div>
+                            <div id="preview" class="upload_preview"></div>
+                        </div>
+                        <div class="upload_submit">
+                            <button type="button" id="fileSubmit" class="upload_submit_btn">确认上传图片</button>
+                        </div>
+                        <div id="uploadInf" class="upload_inf"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="foot">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+/*一个简单的对话框插件*/
+function Dialog(element,options){
+    this._init.apply(this,arguments);
+}
+Dialog.prototype={
+    defaults :{
+        tapHide : true,
+        onAfterDialogInit : function(){}
+    },
+    _init:function(element,options){
+		this.dom=element;
+		this.element=$(element);
+		this.options=$.extend({}, this.defaults, options);
+        this.init();
+    },
+    init : function(){
+        this.dialogShow();
+        this.tap();
+        this.options.onAfterDialogInit();
+    },
+    tap : function(){
+    	var self=this;
+        self.element.bind('click', function(evt) {
+            if(self.options.tapHide){
+                var $clicked = $(evt.target);
+                if (!$clicked.parents().hasClass("dialog-wrap") && !$clicked.hasClass("dialog-wrap") ){
+                    self.dialogHide();
+                    return false;
+                }
+            }
+        });
+    },
+    dialogShow : function(){
+        this.element.css("display","table");
+    },
+    dialogHide : function(){
+        this.element.css("display","none");
+    }
+}
+
+
+var params = {
+	fileInput: $("#fileImage").get(0),
+	upButton: $("#fileSubmit").get(0),
+	url: $("#uploadForm").attr("action"),
+	filter: function(files) {
+		var arrFiles = [];
+		for (var i = 0, file; file = files[i]; i++) {
+			if (file.type.indexOf("image") == 0) {
+				if (file.size >= 512000) {
+					alert('您这张"'+ file.name +'"图片大小过大，应小于500k');
+				} else {
+					arrFiles.push(file);
+				}
+			} else {
+				alert('文件"' + file.name + '"不是图片。');
+			}
+		}
+		return arrFiles;
+	},
+	onSelect: function(files) {
+		var html = '', i = 0;
+		$("#preview").html('<div class="upload_loading"></div>');
+		var funAppendImage = function() {
+			file = files[i];
+			if (file) {
+				var reader = new FileReader()
+				reader.onload = function(e) {
+					html +=
+					'<div id="uploadList_'+ i +'" class="upload_append_list">'+
+					    '<p>'+
+					    	'<strong>' + file.name + '</strong><br />'+
+							'<a href="javascript:" class="upload_delete" title="删除" data-index="'+ i +'">删除</a>'+
+						'</p>'+
+						'<p>'+
+							'<img id="uploadImage_' + i + '" src="' + e.target.result + '" class="upload_image" />'+
+						'</p>'+
+						'<p>'+
+							'<span id="uploadProgress_' + i + '" class="upload_progress"></span>' +
+						'</p>'+
+					'</div>';
+					i++;
+					funAppendImage();
+				}
+				reader.readAsDataURL(file);
+			} else {
+				$("#preview").html(html);
+				if (html) {
+					//删除方法
+					$(".upload_delete").click(function() {
+						YsUpLoad.funDeleteFile(files[parseInt($(this).attr("data-index"))]);
+						return false;
+					});
+					//提交按钮显示
+					$("#fileSubmit").show();
+				} else {
+					//提交按钮隐藏
+					$("#fileSubmit").hide();
+				}
+			}
+		};
+		funAppendImage();
+	},
+	onDelete: function(file) {
+		$("#uploadList_" + file.index).fadeOut();
+	},
+	onProgress: function(file, loaded, total) {
+		var eleProgress = $("#uploadProgress_" + file.index), percent = (loaded / total * 100).toFixed(2) + '%';
+		eleProgress.show().html(percent);
+	},
+	onSuccess: function(file, response) {
+		$("#uploadInf").append("<p>上传成功，图片地址是：" + response + "</p>");
+        $(".ys-zl-list>li span.head img").attr("src",response)
+	},
+	onFailure: function(file) {
+		$("#uploadInf").append("<p>图片" + file.name + "上传失败！</p>");
+		$("#uploadImage_" + file.index).css("opacity", 0.2);
+	},
+	onComplete: function() {
+		//提交按钮隐藏
+		$("#fileSubmit").hide();
+		//file控件value置空
+		$("#fileImage").val("");
+		$("#uploadInf").append("<p>当前图片全部上传完毕，可继续添加上传。</p>");
+	}
+};
+YsUpLoad = $.extend(YsUpLoad, params);
+YsUpLoad.init();
+
+
+$(function(){
+	//自动新对话框编辑内容
+    $("ul.ys-zl-list").ysAutoText();
+
+    //图片上传
+    $('.ys-zl-list>li span.head img').bind('click', function(){
+        new Dialog( ".dialog-mask",{
+            onAfterDialogInit : function(){
+                YsUpLoad.init();
+            }
+        });
+    });
+})
+
+//日期选择
+;(function($) {
+	$.init();
+	var result = $('#birthday')[0];
+	var btns = $('.birthday-date');
+	btns.each(function(i, btn) {
+		btn.addEventListener('tap', function() {
+			var optionsJson = this.getAttribute('data-options') || '{}';
+			var options = JSON.parse(optionsJson);
+			var picker = new $.DtPicker(options);
+			picker.show(function(rs) {
+				result.value =  rs.text;
+				picker.dispose();
+			});
+		}, false);
+	});
+})(mui);
+
+
+</script>
+
+</body>
+</html>
+

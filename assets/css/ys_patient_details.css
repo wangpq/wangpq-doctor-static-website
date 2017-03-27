@@ -1,0 +1,231 @@
+﻿/* 病人详情CSS */
+@charset \"utf-8\";
+html{
+   overflow:hidden;
+}
+.ys-lock-wrap{
+    height:100%;
+	overflow:hidden;
+	background:#f00;
+}
+.ys-lock-wrap .ys-lock-hd{
+    position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:1.8rem;
+	overflow-x:hidden;
+}
+.ys-lock-wrap .ys-lock-bd{
+    position:absolute;
+	left:0;
+	right:0;
+	bottom:0rem;
+	height:1.8rem;
+	background:none;
+}
+.ys-doctor-des{
+	padding:0.38rem 0.4rem;
+	max-width:750px;
+	width:100%;
+	margin:0 auto;
+	overflow-x:hidden;
+	overflow-y:auto;
+	overflow-y:scroll;
+	height:100%
+}
+.ys-doctor-des .w{
+	font-size:0.373334rem;
+	color:#333;
+	display:table;
+	width:100%;
+}
+.ys-doctor-des .cell{
+    display:table-cell;
+	width:50%;
+	padding:0.12rem 0;
+}
+.ys-doctor-des .cell span{
+    color:#f08c34;
+	font-size:0.373334rem;
+}
+.ys-doctor-des .cell strong,
+.ys-doctor-des h4>strong{
+    color:#333;
+    font-weight:600;
+}
+.ys-doctor-des p,
+.ys-doctor-des .p{
+    color:#666;
+	font-size:0.373334rem;
+	line-height:1;
+	padding:0.2rem 0
+}
+.ys-doctor-des h4{
+    color:#333;
+	font-size:0.373334rem;
+	padding-top:0.1rem;
+}
+.ys-doctor-des h4+p,.ys-doctor-des h4+.p{
+    line-height:0.8rem;
+	font-size:0.346666rem;
+}
+
+
+
+.ys-btn,.ys-btn-lg,.ys-btn-s {
+    height: 1.186667rem;
+    line-height: 1.186667rem;
+    padding: 0 11px;
+    min-width: 55px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    background-color: #fdfdfd;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.5,#fff),to(#fafafa));
+    vertical-align: top;
+    color: #00a5e0;
+    -webkit-box-sizing: border-box;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #cacccd;
+    border-radius: 3px
+}
+
+
+.ys-btn:not(.disabled):not(:disabled):active,.ys-btn-lg:not(.disabled):not(:disabled):active,.ys-btn-s:not(.disabled):not(:disabled):active,.ys-btn.active,.active.ys-btn-lg,.active.ys-btn-s {
+    background: #f2f2f2;
+    color: rgba(0,165,224,.5);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.ys-btn:after,.ys-btn-lg:after,.ys-btn-s:after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    bottom: -7px;
+    left: 0;
+    right: 0
+}
+
+.ys-btn-primary {
+    background-color: #18b4ed;
+    border-color: #0baae4;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.5,#1fbaf3),to(#18b4ed));
+    color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.ys-btn-primary:not(.disabled):not(:disabled):active,.ys-btn-primary.active {
+    background: #1ca7da;
+    border-color: #1ca7da;
+    color: rgba(255,255,255,.5);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.ys-btn-danger {
+    background-color: #ff6b3d;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.5,#fc6434),to(#ff6b3d));
+    color: #fff;
+    border-color: #f43d30;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.ys-btn-danger:not(.disabled):not(:disabled):active,.ys-btn-danger.active {
+    background: #fd5f2e;
+    border-color: #ff6b3d;
+    color: rgba(255,255,255,.5);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.ys-btn.disabled,.disabled.ys-btn-lg,.disabled.ys-btn-s,.ys-btn:disabled,.ys-btn-lg:disabled,.ys-btn-s:disabled {
+    border: 0;
+    color: #ccc;
+    background: #e9ebec;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.ys-btn-lg {
+    font-size: 0.24rem;
+    height: 1.186667rem;
+    line-height: 1.186667rem;
+    display: block;
+    width: 100%;
+    border-radius: 4px
+}
+
+.ys-btn-wrap {
+    padding: 0.2rem 0.4rem;
+}
+
+
+
+.ys-lock-box{
+	width:100%;
+	max-width:750px;
+	margin:0 auto;
+	padding:0.3rem 0.4rem;
+	display:table;
+}
+.ys-lock-box .cell{
+    display:table-cell;
+    width:50%;
+	text-align:center;
+}
+.ys-lock-box .cell .ys-btn{
+    display:block;
+	width:100%;
+   font-size:0.4rem;
+   color:#fff;
+}
+.ys-lock-box .cell:first-of-type{
+   padding-right: 0.2rem;
+}
+.ys-lock-box .cell:last-of-type{
+   padding-left: 0.2rem;
+}
+.ys-btn-1{
+   border-color:#6dba42;
+   background:#6dba42;
+}
+.ys-btn-1:active{
+   background:#7BD04B!important;
+   color:#fff!important;
+}
+.ys-btn-2{
+   border-color:#f08c34;
+   background:#f08c34;
+}
+.ys-btn-2:active{
+   background:#ff9900!important;
+   color:#fff!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

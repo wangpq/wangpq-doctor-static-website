@@ -1,0 +1,186 @@
+﻿/* 医生详情页CSS */
+@charset \"utf-8\";
+
+.ys-des-hd{
+    display:table;
+    width:100%;
+	padding: 0.21rem 0.34rem;
+	background-color:#FFF;
+	margin-bottom:0.22rem;
+	border-bottom: 1px solid #dedfdf;
+}
+.ys-des-hd .cell{
+   display:table-cell;
+   vertical-align:middle;
+}
+.ys-des-hd .cell img{
+    width:1.866666rem;
+	height:1.866666rem;
+	border-radius:0.933333rem;
+}
+.ys-des-hd .cell h2{
+    padding:0.1rem 0;
+}
+.ys-des-hd .cell h2  strong{
+    color:#333;
+    font-size:0.426666rem;
+	font-weight:normal;
+	color:#000;
+	margin-right:0.2rem;
+}
+.ys-des-hd .cell h2  span{
+    font-size:0.32rem;
+	color:#626368;
+}
+.ys-des-hd .cell p{
+    font-size:0.293332rem;
+	color:#626368;
+    padding:0.1rem 0;
+}
+.ys-des-hd .cell p.op{
+}
+.ys-des-hd .cell p.op .ys-i-btn{
+    margin-right:0.2rem;
+}
+.ys-des-hd .cell p.op .ys-i-btn-gz{
+   border-color:#ff9900;
+   margin-right:0;
+}
+.ys-des-hd .cell p.op .ys-i-btn-gz span{
+   color:#ff9900;
+}
+.ys-i-dh,
+.ys-i-plus{
+    display:inline-block;
+    width:0.4rem;
+    height:0.4rem;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+	background-position:center center;
+}
+.ys-i-dh{
+   background-image:url(../images/ys-i-dh.png);
+}
+.ys-i-plus{
+   background-image:url(../images/ys-i-plus.png);
+}
+
+
+
+.ys-i-btn{
+   display:inline-block;
+   background-color:transparent;
+   border:1px solid #6dba42;
+   color:#6dba42;
+   padding:0.1rem 0.98rem;
+   border-radius:0.1rem;
+   text-align:center;
+   text-decoration:none;
+   font-size:0.346666rem;
+}
+.ys-i-btn:hover{
+   text-decoration:none;
+}
+.ys-i-btn:active{
+   background-color:#f8f8f8;
+   text-decoration:none;
+   border-color: #f00;
+}
+.ys-i-btn i,
+.ys-i-btn span{
+   vertical-align:middle;
+}
+
+
+
+
+.star{
+}
+.star span{
+  display:inline-block;
+  height:0.373334rem;
+  width:0.373334rem;
+  background-position: center center;
+  background-repeat:no-repeat ;
+  background-image:url(../images/ys-icon-wjx-dark.png);
+  background-size:100% 100%;
+  margin:0 0.06rem;
+}
+.star span.fill{
+  background-image:url(../images/ys-icon-wjx.png);
+}
+
+.ys-des-bd{
+   overflow:hidden;
+}
+.ys-des-bd .ys-box{
+	border-top:1px solid #dedfdf;
+	border-bottom:1px solid #dedfdf;
+	margin-bottom:0.22rem;
+	background-color:#FFF;
+}
+.ys-des-bd .ys-box a{
+    padding:0.32rem 0.6rem 0.32rem 0.346666rem;
+	font-size:0.32rem;
+	color:#626368;
+	display:block;
+}
+.ys-des-bd .ys-box a:hover{
+    text-decoration:none;
+}
+.ys-des-bd .ys-box a:active{
+    background-color:#f0f0f0;
+}
+.ys-des-bd  .ys-desp{
+    position:relative;
+}
+.ys-des-bd  .ys-desp:after{
+    position:absolute;
+	right:0.4rem;;
+	top:50%;
+	margin-top:-0.18rem;
+	width:0.2rem;
+	height:0.4rem;
+	content:"";
+	background:url(../images/ys-i-arrow-right-2.png) center center no-repeat;
+	background-size:100% 100%;
+}
+.ys-des-bd .ys-hot-hd{
+    font-size:0.346666rem;
+    color:#2ca7d8;
+	padding: 0.22rem 0.34rem;
+	border-bottom:1px solid #dedfdf;
+}
+.ys-des-bd .ys-hot-bd{
+
+}
+.ys-des-bd .ys-hot-bd li{
+    border-bottom:1px solid #dedfdf;
+	padding: 0.24rem 0.346666rem;
+}
+.ys-des-bd  h2{
+	margin-bottom: 0.36rem;;
+}
+.ys-des-bd  h2 .user{
+    color:#333333;
+	font-size:0.32rem;
+	vertical-align:middle;
+	margin-right:1rem;
+}
+.ys-des-bd h2 .star{
+    display:inline-block;
+	vertical-align:middle;
+}
+.ys-des-bd h4{
+    overflow:hidden;
+}
+.ys-des-bd .ys-box h4 p{
+    color:#626368;
+	font-size:0.293332rem;
+	line-height:0.5rem;
+    padding:0.2rem 0;
+}
+.ys-des-bd h4 p:last-of-type{
+
+
+}

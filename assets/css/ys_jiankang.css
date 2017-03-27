@@ -1,0 +1,291 @@
+﻿html,body{
+   background-color:#ecf1f0;
+}
+.ys-v-list{
+}
+.ys-v-list .w{
+    border-bottom:1px solid #d4dadc;
+  -webkit-transition-duration:0;
+  -webkit-transform:translate3d(0,0,0);
+  -moz-transition-duration:0;
+  -moz-transform:translate3d(0,0,0);
+  -o-transition-duration:0;
+  -o-transform:translate3d(0,0,0);
+  -ms-transition-duration:0;
+  -ms-transform:translate3d(0,0,0);
+  transition-duration:0;
+  transform:translate3d(0,0,0);
+}
+.ys-v-list .w:active{
+    background-color:#FFF;
+}
+.ys-v-list .hd{
+    font-size:0.4rem;
+	padding:0.28rem 0.283333rem;
+	text-align:left;
+}
+.ys-v-list .bd{
+    display:table;
+	width:100%;
+	padding:0 0.283333rem 0.386rem;
+}
+.ys-v-list .bd .cell{
+    display:table-cell;
+	vertical-align:middle;
+}
+.ys-v-list .bd .cell:first-of-type{
+    padding-right:0.32rem;
+}
+.ys-v-list .bd .cell img{
+    width: 2.36rem;
+    height: 1.56rem;
+	display:block;
+}
+.ys-v-list .cell p{
+  font-size:0.342105rem;
+  color:#626368;
+  text-align: left;
+}
+.ys-v-list .cell .op{
+    text-align:right;
+}
+.ys-v-list .cell .op .time{
+    color:#8c8c8c;
+	font-size:0.346667rem;
+}
+.ys-v-list-2 .w{
+   background-color: #fff;
+   margin-top:0.36rem;
+   border-top: 1px solid #d4dadc;
+}
+
+.swiper-slide:nth-of-type(2){
+   background-color: #f5f5f5;
+}
+
+.ys-wsc{
+    overflow:hidden;
+    display:block;
+	width:100%;
+}
+.ys-wsc>img{
+    display:block;
+	width:4.8rem;
+	margin:1.5rem auto 0.9rem;
+}
+.ys-wsc .text{
+   display:block;
+   text-align:center;
+   padding:1rem auto;
+   color:#bebebe;
+   font-size:0.48rem;
+}
+
+
+.ys-s-btn{
+   padding:0.04rem 0.18rem;
+   background-color:#6dba42;
+   outline:none;
+   border:none;
+   color:#fff;
+   font-size:0.32rem;
+   font-weight:bold;
+   border-radius:0.054rem;
+   line-height:1;
+}
+.ys-s-btn:active{
+   background-color:#fd5521;
+}
+.ys-s-btn.default{
+
+}
+.ys-s-btn.default:active{
+   background-color:#fd5521;
+}
+.ys-s-btn.ys-s-btn-tj{
+   background-color:#f08c34;
+}
+.ys-s-btn.ys-s-btn-tj:active{
+   background-color:#ff9421;
+}
+
+#lastedNews{
+   background: #ecf1f0;
+}
+#personalCollect{
+   background: #f5f5f5;
+}
+#healthyTopics{
+   background: #f5f5f5;
+}
+
+
+
+
+#swipe-tab {
+	width: 100%;
+	height: 100%;
+	padding-top:1.14rem;
+}
+#swipe-tab .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+#swipe-tab .swiper-pagination{
+    display:table;
+	top:0;
+	background-color:#FFF;
+	overflow:hidden;
+}
+#swipe-tab .swiper-pagination-bullet{
+    width:33.333333%;
+	border-radius:0;
+	height:1.14rem;
+	line-height:1.14rem;
+	display:table-cell;
+	color:#333;
+    background:none;
+	opacity:1;
+	font-size:0.373334rem;
+	position:relative;
+	border-bottom:1px solid #c4c9cc;
+}
+#swipe-tab span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background:transparent!important;
+	color:#ed6759;
+	position:relative;
+	-webkit-transition : background-color 0.3s ease-in-out 0s;
+	-moz-transition : background-color 0.3s ease-in-out 0s;
+	-o-transition : background-color 0.3s ease-in-out 0s;
+	-ms-transition : background-color 0.3s ease-in-out 0s;
+	transition : background-color 0.3s ease-in-out 0s;
+}
+
+#swipe-tab span.swiper-pagination-bullet:after{
+    position:absolute;
+    left:50%;
+    bottom:-0.13rem;
+    width:0.24rem;
+    height:0.24rem;
+    margin-left:-0.12rem;
+    content:"";
+    background-color:transparent;
+    border:1px solid transparent;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+#swipe-tab span.swiper-pagination-bullet.swiper-pagination-bullet-active:after{
+    border-color:#c4c9cc!important;
+	background-color:#ecf1f0!important;
+}
+
+
+.ys-hd-wrap{
+    height: 1.14rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.ys-hd-tab{
+    position:relative;
+    display: table;
+    background-color: #FFF;
+    width:100%;
+    overflow:hidden;
+}
+.ys-hd-tab li{
+    width: 33.333333%;
+    border-radius: 0;
+    height: 1.14rem;
+    line-height: 1.14rem;
+    display: table-cell;
+    text-align:center;
+    color: #333;
+    background: none;
+    font-size: 0.373334rem;
+    border-bottom: 1px solid #c4c9cc;
+}
+.ys-hd-tab li:after{
+    position:absolute;
+    left:50%;
+    bottom:-0.13rem;
+    width:0.24rem;
+    height:0.24rem;
+    margin-left:-0.12rem;
+    content:"";
+    background-color:transparent;
+    border:1px solid transparent;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+.ys-hd-tab li.active,
+.ys-hd-tab li:active{
+    background:transparent!important;
+    color:#f08c34;
+    position:relative;
+    -webkit-transition : background-color 0.3s ease-in-out 0s;
+    -moz-transition : background-color 0.3s ease-in-out 0s;
+    -o-transition : background-color 0.3s ease-in-out 0s;
+    -ms-transition : background-color 0.3s ease-in-out 0s;
+    transition : background-color 0.3s ease-in-out 0s;
+}
+.ys-hd-tab li.active:after,
+.ys-hd-tab li:active:after{
+    border-color: #c4c9cc;
+    background-color: #ecf1f0;
+}
+
+
+.ys-bd-wrap{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.14rem;
+    bottom:0;
+    overflow:hidden;
+}
+.ys-bd-wrap .ys-bd-box{
+    display: none;
+}
+.ys-bd-wrap .ys-bd-box:first-child{
+    display: block;
+}
+.ys-bd-wrap .ys-bd-tab{
+    position: relative;
+    height: 100%;
+    top:0;
+}
+.ys-bd-wrap .wrapper{
+    position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  overflow:hidden;
+}
+.ys-bd-wrap .ys-bd-box{
+    display: none;
+}
+.ys-bd-wrap .ys-bd-box:first-of-type{
+    display: block;
+}

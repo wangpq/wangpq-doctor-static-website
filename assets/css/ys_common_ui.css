@@ -1,0 +1,408 @@
+﻿@charset "utf-8";
+/**flexible ui**/
+html {
+  color: #000;
+  background: #fff;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html * {
+  outline: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  font-family: sans-serif;
+}
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+/* 去掉各 Table  cell 的边距并让其边重合 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* 去除默认边框 */
+fieldset,
+img {
+  border: 0;
+}
+/* 去掉 firefox 下此元素的边框 */
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+/* 一致的 del 样式 */
+del {
+  text-decoration: line-through;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: 500;
+}
+/* 去掉列表前的标识, li 会继承 */
+ol,
+ul {
+  list-style: none;
+}
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption,
+th {
+  text-align: left;
+}
+/* 来自 yahoo, 让标题都自定义, 适应多个系统应用 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+q:before,
+q:after {
+  content: '';
+}
+/* 统一上标和下标 */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* 正常链接 未访问 */
+/* 鼠标悬停 */
+a:hover {
+  text-decoration: underline;
+}
+/* 默认不显示下划线，保持页面简洁 */
+ins,
+a {
+  text-decoration: none;
+}
+
+
+/**项目公共UI**/
+*, :after, :before {
+    box-sizing: border-box;
+}
+html{background:none}
+body{
+	max-width:750px;
+	margin:0 auto;
+	background:#f6f6f6;
+	font-family:'STHeiti','Microsoft YaHei',Helvetica,Arial,sans-serif;
+  -webkit-text-size-adjust: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  -webkit-tap-highlight-color: transparent; /* For some android devices */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 移除元素的在focus等状态下的一些默认效果 */
+a, a:active, a:focus,
+button, button:active,
+input, input:focus,
+select, select:focus,
+textarea, textarea:focus,[onclick]{
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+
+/* 清除浮动 */
+.clx:before,
+.clx:after {
+  display:table;
+  content:"";
+}
+.clx:after{clear: both;}
+
+/**
+ * 垂直上下居中
+ */
+.sx-center {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  text-align: center;
+  height: 200px;/* 需要重置 */
+}
+
+
+
+
+
+/*弹出层样式*/
+.dialog-mask {
+  /*
+  display:block;
+  position:absolute;
+  top:50%;left:50%;
+  width:300px;
+  margin-left:-150px;
+  z-index:1002;
+  background-color: #fff;
+  overflow: hidden;*/
+
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  display: none;
+  background-color: rgba(0,0,0,0.2);
+  transition: opacity .3s ease;
+
+}
+.dialog-fade-mask{
+  display: block;
+  position: fixed;
+  top:0%;
+  left:0%;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.2);
+  z-index:999;
+}
+.dialog-mask .w{
+   display: table-cell;
+   vertical-align: middle;
+}
+.dialog-mask .w .dialog-wrap{
+    width:80%;
+    max-width: 360px;
+    margin:0 auto;
+    background-color: #fff;
+    position: relative;
+    padding:0.6rem 0.4rem;
+}
+.dialog-mask .w .head{
+}
+.dialog-mask .w .body{
+
+}
+.dialog-mask .w .foot{
+
+}
+
+
+/*购买数量加减控件*/
+.ys-auto-count{
+  display: inline-block;
+  width: 2.4rem;
+  height:0.72rem ;
+  border:1px solid #d2d2d2;
+  border-radius:0.1rem;
+  position: relative;
+  overflow:hidden;
+}
+.ys-auto-count .minus,
+.ys-auto-count .add{
+  display: inline-block;
+  width:0.72rem ;
+  height:0.72rem ;
+  text-align: center;
+  line-height: 0.7rem;
+  position: absolute;
+  top:0;
+  font-size: 0.58rem;
+  cursor:default;
+}
+.ys-auto-count .minus{
+   color:#ccc;
+   left:0;
+   border-right: 1px solid #d2d2d2;
+  font-size: 0.4rem;
+}
+.ys-auto-count .add{
+   color:#01af67;
+   right:0;
+   border-left: 1px solid #d2d2d2;
+}
+.ys-auto-count input{
+  width: 0.96rem;
+  height:0.72rem ;
+  border: none;
+  position: absolute;
+  top:0;
+  left:0.72rem;
+  text-align: center;
+  font-size:0.32rem;
+  color:#333;
+}
+
+
+.ys-auto-count.min{
+  width: 2rem;
+  height:0.58rem ;
+}
+.ys-auto-count.min .minus,
+.ys-auto-count.min .add{
+  width:0.58rem ;
+  height:0.58rem ;
+  line-height: 0.5rem ;
+}
+.ys-auto-count.min .minus{
+  line-height: 0.58rem ;
+  font-size: 0.32rem;
+  font-weight: bold;
+}
+.ys-auto-count.min .add{
+}
+.ys-auto-count.min input{
+  width: 0.8rem;
+  height:0.58rem ;
+  left:0.58rem ;
+  font-size:0.32rem;
+}
+
+
+
+/**
+ *
+ * Pull down styles
+ *
+ */
+.pullDown,
+.pullUp {
+  background:#f8f8f8;
+  height:2rem;
+  line-height:2rem;
+  padding:0.1rem 0.2rem;
+  font-weight:bold;
+  font-size:0.2rem;
+  color:#888;
+  text-align: center;
+  width: 100%;
+  vertical-align:middle;
+  display: none;
+}
+.pullDown{
+  position: absolute;
+  left:0.4rem;
+  top:0;
+  z-index:100;
+  width: 2rem;
+  border-radius:1rem;
+  background:rgba(255,255,255,0.95);
+  overflow:hidden;
+  display: none;
+}
+.pullDown .pullDownLabel{
+  display: none;
+}
+.pullDown .pullDownIcon,
+.pullUp .pullUpIcon  {
+  display:inline-block;
+  width:40px;
+  height:40px;
+  vertical-align:middle;
+  background:url(../images/pull-icon@2x.png) 0 0 no-repeat;
+  -webkit-background-size:40px 80px; background-size:40px 80px;
+  -webkit-transition-property:-webkit-transform;
+  -webkit-transition-duration:250ms;
+}
+.pullDown .pullDownIcon {
+  -webkit-transform:rotate(0deg) translateZ(0);
+}
+.pullUp .pullUpIcon  {
+  -webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+.pullDown.flip .pullDownIcon {
+  -webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+.pullUp.flip .pullUpIcon {
+  -webkit-transform:rotate(0deg) translateZ(0);
+}
+
+.pullDown.loading .pullDownIcon,
+.pullUp.loading .pullUpIcon {
+  background-position:0 100%;
+  -webkit-transform:rotate(0deg) translateZ(0);
+  -webkit-transition-duration:0ms;
+
+  -webkit-animation-name:loading;
+  -webkit-animation-duration:2s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:linear;
+}
+.pullDown .pullUpLabel{
+   display: none;
+}
+@-webkit-keyframes loading {
+  from { -webkit-transform:rotate(0deg) translateZ(0); }
+  to { -webkit-transform:rotate(360deg) translateZ(0); }
+}

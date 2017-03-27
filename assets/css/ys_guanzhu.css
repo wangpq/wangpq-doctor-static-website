@@ -1,0 +1,268 @@
+﻿/* 我的关注CSS */
+@charset \"utf-8\";
+
+/* 带图标的列表栏 */
+.ys-list {
+    background-color: #fff;
+    width: 100%;
+	margin-top:0.36rem;
+	border-top:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+}
+
+.ys-list>li {
+    position: relative;
+    padding-left: 0.4rem;
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+}
+
+.ys-list-pure>li {
+    display: block
+}
+
+.ys-list-text>li,
+.ys-list-pure>li {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0.4rem;
+    -webkit-box-align: center
+}
+
+.ys-list-text h4,
+.ys-list-text p {
+    -webkit-box-flex: 1
+}
+
+.ys-list>li.ys-border-t{
+    border-top:1px solid #e5e5e5;
+	display:table;
+	width:100%;
+}
+.ys-list>li.ys-border-t:first-child,
+.ys-list>li:first-child>.ys-border-t {
+    border: 0;
+    background-image: none
+}
+
+.ys-list-thumb,
+.ys-list-thumb-s,
+.ys-list-img,
+.ys-list-icon {
+    position: relative;
+    margin: 0.133333rem 0.2rem 0.133333rem 0
+}
+
+.ys-list-thumb>span,
+.ys-list-img>span,
+.ys-list-icon>span {
+    display: inline-block;
+    width: 0.68rem;
+    height: 0.68rem;
+	vertical-align:middle;
+    z-index: 1;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+       -moz-background-size: 100% 100%;
+            background-size: 100% 100%;
+}
+.ys-list-thumb>span.wt{
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+       -moz-background-size: 100% 100%;
+            background-size: 100% 100%;
+}
+
+
+
+
+.ys-list-thumb {
+    width: 0.68rem;
+    height: 0.68rem;
+}
+
+.ys-list-icon {
+    width: 0.68rem;
+    height: 0.68rem;
+}
+
+.ys-list-info {
+
+}
+.ys-list .ys-list-info:after{
+    position:absolute;
+	right:0;;
+	top:50%;
+	margin-top:-0.18rem;
+	width:0.213333rem;
+	height:0.36rem;
+	content:"";
+	background:url(../images/ys-i-arrow-right.png) center center no-repeat;
+	background-size:100% 100%;
+}
+.ys-list-info p {
+    color: #777;
+    font-size: 14px
+}
+
+.ys-list-text .ys-list-info {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.ys-list li h4 {
+    font-size: 0.373333rem;
+	color:#333;
+}
+
+.ys-list-active>li:active,
+.ys-list li.active {
+    background-color: #e5e6e7;
+    padding-left: 0.4rem;
+    margin-left: 0;
+}
+
+.ys-list>li:active,
+.ys-list>li.active {
+    background: #e5e6e7;
+    border-top-color: #e5e6e7
+}
+.ys-list .ys-list-opp{
+    padding-top: 0.133333rem;
+    padding-bottom: 0.133333rem;
+    margin-right: 0.4rem;
+	text-align:right;
+}
+
+.ys-list-gz{
+	background:none;
+	border-bottom:none;
+}
+.ys-list-gz li{
+    background-color:#FFF;
+    border-bottom: 1px solid #e5e5e5!important;
+	margin-bottom: 0.18rem;
+    padding:0.27rem 0;
+}
+
+.ys-list-gz .ys-list-img{
+	margin:0.29rem 0.29rem 0.29rem 0;
+	display:table-cell;
+	vertical-align:middle;
+    padding-left:0.4rem;
+    width:2.267rem;
+}
+.ys-list-gz .ys-list-img span{
+    width: 1.866667rem;
+    height:1.866667rem;
+	border-radius: 0.9333335rem;
+}
+.ys-list-gz .ys-list-info{
+    display:table-cell;
+	margin-right:0;
+	vertical-align:middle;
+	padding-left:0.4rem;
+}
+.ys-list-gz .ys-list-info:after{
+    display:none;
+}
+.ys-list-gz .ys-list-opp{
+	width: 1.5rem;
+	display:table-cell;
+	text-align: right ;
+	vertical-align:middle;
+	padding-right:0.4rem;
+}
+
+.ys-list-gz li h4>strong{
+    font-size:0.48rem;
+	font-weight:normal;
+}
+.ys-list-gz li h4>span{
+    color:#f08c34;
+	border:1px solid #f08c34;
+	border-radius:6px;
+	padding:0 3px;
+	margin:0 4px;
+    font-size:0.3rem;
+}
+.ys-list-gz .ys-nowrap{
+    margin:0 0.2rem 0.2rem 0;
+    line-height: 1;
+}
+.ys-list-gz .ys-nowrap:last-child{
+    margin-bottom:0;
+}
+.ys-list-gz .ys-nowrap i+span{
+	vertical-align:middle;
+    padding:0 4px;
+	font-size:0.32rem;
+	color:#666;
+}
+.ys-list-gz .ys-nowrap:nth-of-type(2) span{
+    color:#f08c34;
+}
+
+
+
+
+
+.ys-btn-cancel{
+   display:inline-block;
+   width:1.226667rem;
+   height:1.226667rem;
+   border:1px solid #d2d2d2;
+   border-radius: 4px;
+   text-align:center;
+   background-color:#f9f9f9;
+   padding:0.1rem;
+}
+.ys-btn-cancel:active{
+   background-color:#e5e6e7;
+}
+.ys-btn-cancel i{
+    display:inline-block;
+    width: 0.56rem;
+    height: 0.9rem;
+    background: url(../images/ys-men-cancel.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.ys-btn-cancel span{
+    display:block;
+    text-align:center;
+	font-size:0.266667rem;
+	color:#666;
+}
+
+
+
+
+.ys-i-map{
+    display:inline-block;
+    width: 0.3rem;
+    height: 0.35rem;
+    background: url(../images/ys-icon-02.png) center center no-repeat;
+    background-size: 100% 100%;
+	vertical-align:middle;
+}
+.ys-i-depart{
+    display:inline-block;
+    width: 0.32rem;
+    height: 0.32rem;
+    background: url(../images/ys-icon-01.png) center center no-repeat;
+    background-size: 100% 100%;
+	vertical-align:middle;
+}
+.ys-i-love{
+    display:inline-block;
+    width: 0.3rem;
+    height: 0.28rem;
+    background: url(../images/ys-icon-03.png) center center no-repeat;
+    background-size: 100% 100%;
+	vertical-align:middle;
+}
+
+
+

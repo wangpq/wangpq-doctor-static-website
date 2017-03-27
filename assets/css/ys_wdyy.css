@@ -1,0 +1,261 @@
+﻿/* 我的用药页CSS */
+@charset \"utf-8\";
+html,body{
+   max-width:auto;
+}
+.swiper-container {
+	width: 100%;
+	max-width:750px;
+	height:4.253333rem;
+	margin: 0 auto;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+span.swiper-pagination-bullet{
+	width: 0.16rem;
+	height: 0.16rem;
+	margin:0 0.1rem;
+	opacity:1;
+	display: inline-block;
+	border:1px solid #cedbdb;
+	background:#cedbdb;
+	line-height: 0;
+	font-size: 0;
+	cursor: pointer;
+	text-indent: -9999px;
+	border-radius: 0.08rem;
+	-webkit-border-radius: 0.08rem;
+	transition:width ease-in .4s; 
+	-webkit-transition:width ease-in .4s; 
+	-moz-transition:width ease-in .4s; 
+	-o-transition:width ease-in .4s; 
+	-ms-transition:width ease-in .4s; 
+}
+.swiper-pagination-bullet-active{
+	background:#fff!important;
+	border-color:#fff!important;
+	width:0.40rem!important;
+	opacity:1;
+}
+.swiper-container .swiper-slide img{
+	display:block;
+	margin:0 auto;
+	max-width:100%;
+}
+	
+	
+
+.ys-yy-box{
+    background-color:#f5f5f5;
+}	
+.ys-yy-box dl{
+    display:table;
+	width:100%;
+}
+.ys-yy-box dt{
+    display:table-cell;
+	width:1.873334rem;
+	vertical-align:middle;
+	padding:0.3rem 0.4rem;
+}
+.ys-yy-box dt span{
+    display:block;
+    color:#c1c1c1;
+}
+.ys-yy-box dt span:first-of-type{
+	font-size:0.32rem;
+}
+.ys-yy-box dt span:last-of-type{
+	font-size:0.453332rem;
+}
+.ys-yy-box dd{
+    display:table-cell;
+	vertical-align:middle;
+	padding:0.3rem 0.4rem;
+}	
+.ys-yy-box dd.line{
+    width:0.04rem;
+    background-color:#c1c1c1;
+	padding:0;
+}
+.ys-yy-box dl:first-of-type dt,
+.ys-yy-box dl:first-of-type dd{
+    padding-top:0.8rem;
+}
+.ys-yy-box dd:last-of-type{
+	padding-left:0.2rem;
+}
+.ys-yy-box dd.line div{
+    display:block;
+	width:0.04rem;
+	height:100%;
+}
+.ys-yy-box dd.line div i{
+    display:inline-block;
+	width:0.26rem;
+	height:0.26rem;
+	border-radius:0.15rem;
+	margin-left:-0.11rem;
+	background-color:#c1c1c1;
+	border:0.04rem solid #fff;
+}
+.ys-yy-box dd .w{
+    display:table;
+	width:100%;
+}
+.ys-yy-box dd .w>*{
+    vertical-align:middle;
+}
+.ys-yy-box dd .w .cell{
+    display:table-cell;
+	padding:0 0.1rem;
+}
+.ys-yy-box dd .w .cell:nth-last-of-type(2) {
+    text-align:right;
+}
+.ys-yy-box dd .w .cell:last-of-type{
+    text-align:right;
+}
+.ys-yy-box dd .w .name{
+    color:#999999;
+	font-size:0.38rem;
+}
+.ys-yy-box dd .w .yh{
+    color:#999999;
+	font-size:0.32rem;
+	min-width:1.6rem;
+	display:inline-block;
+}
+.ys-yy-box dd .w .btn{
+    display:inline-block;
+	background-color:#ff6b3d;
+	width:1rem;
+	height:0.7rem;
+	vertical-align:middle;
+	text-align:center;
+    border-top-right-radius:0.12rem;
+    border-bottom-right-radius:0.12rem;
+	
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  text-align: center;
+  height:0.7rem;;/* 需要重置 */
+	
+	
+}
+.ys-yy-box dd .w .btn i{
+    display:inline-block;
+	width:0.4rem;
+	height:0.4rem;
+    background: url(../images/ys-i-yy.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.ys-yy-box dd .w .btn:active{
+    background-color:#fa521e;
+}
+.ys-yy-box dl:nth-of-type(2) dd.line div i{
+    background-color:#c1c1c1;
+}
+.ys-yy-box dl:nth-of-type(3) dd.line div i{
+    background-color:#ffa94c;
+}
+.ys-yy-box dl:nth-of-type(4) dd.line div i{
+    background-color:#ff6b3d;
+}
+.ys-yy-box dl:nth-of-type(4) dd.line div i{
+    background-color:#ff6b3d;
+}
+
+
+
+
+      
+.box{
+	position: relative;
+	width: 1.6rem;
+	height:1.6rem;
+	margin: 0 auto;
+	display:inline-block;
+	vertical-align:middle;
+}
+.lineF, .lineS{
+	position: absolute;
+	visibility: hidden;
+}
+.lineS{
+	top: 0;
+	left: 0;
+}
+.boxF, .boxS, .boxT, .overlay{
+	width: 1.1rem;
+	height: 1.6rem;
+	overflow: hidden;
+}
+.boxF, .boxS{
+	visibility: hidden;
+}
+.boxF{
+	transform: rotate(120deg);
+	float: left;
+	margin-left: 10px;
+	-ms-transform: rotate(120deg);
+	-moz-transform: rotate(120deg);
+	-webkit-transform: rotate(120deg);
+}
+.boxS{
+	transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-webkit-transform: rotate(-60deg);
+}
+.boxT{
+	transform: rotate(-60deg);
+	background: no-repeat 50% center;
+	background-size: 125% auto;
+	-ms-transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-webkit-transform: rotate(-60deg);
+	visibility: visible;
+	display:block;
+}
+.overlay{
+	transition: all 250ms ease-in-out 0s;
+	display: none;
+	position: relative;
+}
+.overlay a {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -16px 0 0 -16px;
+	border-radius: 3px;
+	background-color: #d3b850;
+	text-align: center;
+	line-height: 32px;
+	width: 32px;
+	height: 32px;
+	text-decoration: none;
+	color: White;
+	font-size: 18px;
+	font-weight: bolder;
+}

@@ -1,0 +1,41 @@
+﻿/* 文本内容CSS */
+@charset \"utf-8\";
+html,body{
+   background-color: #f5f4f9;
+}
+.article{
+   padding:0.4rem;
+}
+.article h2{
+   color:#333;
+   font-size:0.48rem;
+   font-weight: 600;
+   line-height: 1.4em;
+   letter-spacing:0.022rem;
+}
+.article h4{
+    display: table;
+    width:100%;
+    padding:0.28rem 0;
+}
+.article h4 .cell{
+    display: table-cell;
+    color:#999;
+    font-size:0.32rem;
+}
+.article h4 .cell:first-child{
+    text-align: left;
+}
+.article h4 .cell:last-child{
+    text-align: right;
+}
+.article .bd{
+
+}
+.article .bd p{
+    text-indent: 2em;
+    color:#444;
+    font-size:0.373334rem;
+    line-height: 2.04em;
+   letter-spacing:0.01rem;
+}

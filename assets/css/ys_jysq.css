@@ -1,0 +1,103 @@
+﻿/* 进药申请CSS */
+@charset \"utf-8\";
+
+.ys-jy-list{
+   margin-top:0.4rem;
+}
+.ys-jy-list li{
+    padding:0.28rem 0.4rem;
+    background-color: #fff;
+    margin-bottom:0.2rem;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+.ys-jy-list .hd{
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom:0.38rem;
+}
+.ys-jy-list .hd .cell{
+    display: table-cell;
+}
+.ys-jy-list .hd .cell:first-child{
+    width: 2.48rem;
+}
+.ys-jy-list .hd .cell:first-child .figure{
+    width: 2.48rem;
+    height:2.1rem ;
+    line-height:2.1rem ;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+}
+.ys-jy-list .hd .cell .figure img{
+	display: inline-block;
+    max-width: 2.48rem;
+    max-height:2.1rem ;
+    vertical-align:middle;
+}
+.ys-jy-list .hd .cell:last-child{
+    vertical-align:top;
+    padding-left:0.4rem;
+}
+.ys-jy-list .hd .cell h2{
+    font-size:0.4rem;
+    color:#333;
+    padding-bottom:0.1rem;
+}
+.ys-jy-list .hd .cell h4{
+    font-size:0.32rem;
+    color:#626368;
+    padding:0.1rem 0 0.3rem;
+}
+.ys-jy-list .hd .cell h6{
+    font-size:0.32rem;
+    color:#999;
+}
+.ys-jy-list .hd .cell h6>.text{
+    vertical-align: middle;
+}
+.ys-jy-list .hd .cell h6>.ys-auto-count{
+    vertical-align: middle;
+}
+
+.ys-jy-list .bd{
+    padding: 0.24rem 0 0;
+    display: table;
+    width: 100%;
+}
+.ys-jy-list .bd .cell{
+	display: table-cell;
+}
+.ys-jy-list .bd .cell:first-child{
+    text-align: left;
+}
+.ys-jy-list .bd .cell:first-child .text{
+    color:#333;
+    font-size:0.32rem;
+    vertical-align: middle;
+}
+.ys-jy-list .bd .cell:first-child .num{
+    color:#ff6b3d;
+    font-size:0.4rem;
+    margin-right:0.6rem;
+    vertical-align: middle;
+}
+.ys-jy-list .bd .cell:last-child{
+	text-align: right;
+}
+.ys-jy-list .bd .cell:last-child input{
+    background-color: #f08c34;
+    border: none;
+    border-radius:0.36rem;
+    padding:0 0.36rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    color:#fff;
+    font-size:0.346666rem;
+}
+.ys-jy-list .bd .cell:last-child input:active,
+.ys-jy-list .bd .cell:last-child input:focus{
+    outline:none;
+    background-color: #fb511c;
+}

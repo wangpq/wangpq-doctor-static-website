@@ -1,0 +1,16 @@
+/* CSS Document */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0; }
+body, button, input, select, textarea { font: 14px "Microsoft YaHei", Arial, Helvetica, sans-serif; }
+button, input, select, textarea { outline: none; }
+textarea { resize: none }
+address, cite, dfn, em, var { font-style: normal; }
+small { font-size: 12px; } /* small 把文本的字体变小一号，直到达到下限的一号字。 与 <big> 标签类似； */
+ul, ol { list-style: none; }
+a, u { text-decoration: none; outline: medium none; outline: none; }
+a:hover { outline: medium none; outline: none; }
+img { border: 0 none; }
+button, input, select, textarea { font-size: 100%; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+

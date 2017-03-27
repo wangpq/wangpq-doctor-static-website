@@ -1,0 +1,20 @@
+﻿@charset \"utf-8\";
+html,body{
+	background-color: #f5f4f9;
+}
+.ys-wsc{
+    overflow:hidden;
+    margin-bottom:1.1rem;
+}
+.ys-wsc>img{
+    display:block;
+	width:2.08rem;
+	margin:1.5rem auto 0.5rem;
+}
+.ys-wsc .text{
+   display:block;
+   text-align:center;
+   padding:1rem auto;
+   color:#646464;
+   font-size:0.48rem;
+}
